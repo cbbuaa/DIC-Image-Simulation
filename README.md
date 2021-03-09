@@ -1,14 +1,14 @@
 # DIC-Image-Simulation
 
-Simulate speckle pattern images and deformaed images for Digital Image Correlation (DIC)
+Simulate speckle pattern images and deformed images for Digital Image Correlation (DIC)
 
-To evaluate the algorithm performance of digital image correlation (DIC), simulated speckle pattern images with sub-pixel displacements or complicated deformaiton are generally required due to their advantages of immuning to many complicated errors and/or noises. 
+To evaluate the algorithm performance of digital image correlation (DIC), simulated speckle pattern images with sub-pixel displacements or complicated deformaiton are generally required due to their advantages of immuning to various complicated errors and/or noises. 
 
 ## Introduction
-This project is used to simulate speckle images and deformation images. There are **three** different ways. 
-1. The first one is based on phase shift. It effective only for rigid-body translation, which is corresponding to file ``translationFFT.m``. 
-2. The second one is based on interpolation. It is effective in more complicated situtations, which is corresponding to ``defImgSimu.m``.
-3. The third one is based on downsampling. It is mainly used for image shift, which is corresponding to ``translationBinning.m``.
+This project aims to simulate speckle images and deformation images. There are **three** different ways. 
+1. It is based on phase shift. It effective only for rigid-body translation, which is corresponding to file ``translationFFT.m``. 
+2. It is based on interpolation. It is effective in more complicated situtations, which is corresponding to ``defImgSimu.m``.
+3. It is based on downsampling. It is mainly used for image shift, which is corresponding to ``translationBinning.m``.
 
 Simulation tests demonstrates that the third one, i.e., the one based on downsampling has the best performance.
 
